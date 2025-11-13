@@ -1,1 +1,0 @@
-TOKEN = 'Your_Telegram_Bot_Token'
