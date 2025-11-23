@@ -1,7 +1,9 @@
 __pycache__
+.vscode
 venv
 .env
 app/results
 app/logs/main_logs
 app/logs/arxiv_logs
 app/logs/authors_logs
+app/logs/graph_logs
