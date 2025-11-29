@@ -8,3 +8,7 @@ app/logs/arxiv_logs
 app/logs/authors_logs
 app/logs/graph_logs
 app/logs/compute_logs
+model_testing/datasets
+model_testing/logs/model_logs
+checkpoints/
+model_testing/recall_results.json
