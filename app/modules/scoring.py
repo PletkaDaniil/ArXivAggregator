@@ -1,6 +1,5 @@
 import re
 import numpy as np
-import networkx as nx
 from app.modules.pdf_processing import process_paper
 from app.authors_graph.graph_ranking import get_author_rank, graph_builder
 from app.logs.compute_logger import logger
