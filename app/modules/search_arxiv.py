@@ -6,8 +6,8 @@ from urllib.parse import quote_plus
 from app.logs.arxiv_logger import logger
 
 USER_AGENT = "Mozilla/5.0"
-PAGE_SIZE = 25
-MAX_PAGES = 1
+PAGE_SIZE = 200
+MAX_PAGES = 6
 YEAR_FILTER = "2025"
 DELAY = 3
 
@@ -20,30 +20,40 @@ def arxiv_url(query: str, page: int) -> str:
     start = page * PAGE_SIZE
     return (
         f"https://arxiv.org/search/?query={encoded}&searchtype=all"
-        f"&abstracts=show&order=&size={PAGE_SIZE}&start={start}"
+        f"&abstracts=show&order=-announced_date_first&size={PAGE_SIZE}&start={start}"
     )
 
 
 def fetch_page(url: str) -> str | None:
     """
-        Загружаем страницу по URL
+        Загружаем страницу с arXiv
     """
-    try:
-        response = requests.get(
-            url, 
-            headers={"User-Agent": USER_AGENT},
-            timeout=30
-        )
-        if response.status_code != 200:
-            logger.error(f"Ошибка при загрузке страницы: {response.status_code} URL: {url}")
-            return None
-        
-        logger.info(f"Страница успешно загружена: {url}")
-        return response.text
+    attempts, delay = 0, DELAY
+    while attempts < 5:
+        try:
+            response = requests.get(
+                url,
+                headers={"User-Agent": USER_AGENT},
+                timeout=60
+            )
+            if response.status_code == 200:
+                logger.info(f"Страница загружена: {url}")
+                return response.text
 
-    except requests.RequestException as e:
-        logger.exception(f"Ошибка запроса к arXiv: {e} URL: {url}")
-        return None
+            logger.error(f"Ошибка {response.status_code}; URL: {url}")
+            return None
+
+        except Exception as e:
+            logger.warning(
+                f"[{attempts}/{5}] Ошибка запроса: {e}. "
+                f"Жду {delay} сек и пробую снова"
+            )
+            time.sleep(delay)
+            delay *= 2
+        attempts += 1
+
+    logger.error(f"Все попытки исчерпаны: {url}")
+    return None
 
 
 def parse_article(item: Tag) -> dict | None:
