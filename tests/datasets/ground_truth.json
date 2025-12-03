@@ -1,0 +1,402 @@
+[
+  {
+    "query": "LLM use tools",
+    "predicted": [
+      {
+        "title": "Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task",
+        "link": "https://arxiv.org/abs/2506.08872",
+        "arxiv_id": "arXiv:2506.08872"
+      },
+      {
+        "title": "The Landscape of Agentic Reinforcement Learning for LLMs: A Survey",
+        "link": "https://arxiv.org/abs/2509.02547",
+        "arxiv_id": "arXiv:2509.02547"
+      },
+      {
+        "title": "VerlTool: Towards Holistic Agentic Reinforcement Learning with Tool Use",
+        "link": "https://arxiv.org/abs/2509.01055",
+        "arxiv_id": "arXiv:2509.01055"
+      },
+      {
+        "title": "MCP-Bench: Benchmarking Tool-Using LLM Agents with Complex Real-World Tasks via MCP Servers",
+        "link": "https://arxiv.org/abs/2508.20453",
+        "arxiv_id": "arXiv:2508.20453"
+      },
+      {
+        "title": "The Future is Agentic: Definitions, Perspectives, and Open Challenges of Multi-Agent Recommender Systems",
+        "link": "https://arxiv.org/abs/2507.02097",
+        "arxiv_id": "arXiv:2507.02097"
+      },
+      {
+        "title": "EvolveR: Self-Evolving LLM Agents through an Experience-Driven Lifecycle",
+        "link": "https://arxiv.org/abs/2510.16079",
+        "arxiv_id": "arXiv:2510.16079"
+      },
+      {
+        "title": "LLM-based Agentic Reasoning Frameworks: A Survey from Methods to Scenarios",
+        "link": "https://arxiv.org/abs/2508.17692",
+        "arxiv_id": "arXiv:2508.17692"
+      },
+      {
+        "title": "ToolGrad: Efficient Tool-use Dataset Generation with Textual \"Gradients\"",
+        "link": "https://arxiv.org/abs/2508.04086",
+        "arxiv_id": "arXiv:2508.04086"
+      },
+      {
+        "title": "Process-Supervised Reinforcement Learning for Interactive Multimodal Tool-Use Agents",
+        "link": "https://arxiv.org/abs/2509.14480",
+        "arxiv_id": "arXiv:2509.14480"
+      },
+      {
+        "title": "Procedural Environment Generation for Tool-Use Agents",
+        "link": "https://arxiv.org/abs/2506.11045",
+        "arxiv_id": "arXiv:2506.11045"
+      },
+      {
+        "title": "RefAgent: A Multi-agent LLM-based Framework for Automatic Software Refactoring",
+        "link": "https://arxiv.org/abs/2511.03153",
+        "arxiv_id": "arXiv:2511.03153"
+      },
+      {
+        "title": "ToolScope: Enhancing LLM Agent Tool Use through Tool Merging and Context-Aware Filtering",
+        "link": "https://arxiv.org/abs/2510.20036",
+        "arxiv_id": "arXiv:2510.20036"
+      },
+      {
+        "title": "Guided Reasoning in LLM-Driven Penetration Testing Using Structured Attack Trees",
+        "link": "https://arxiv.org/abs/2509.07939",
+        "arxiv_id": "arXiv:2509.07939"
+      },
+      {
+        "title": "Tool-R1: Sample-Efficient Reinforcement Learning for Agentic Tool Use",
+        "link": "https://arxiv.org/abs/2509.12867",
+        "arxiv_id": "arXiv:2509.12867"
+      },
+      {
+        "title": "PORTool: Tool-Use LLM Training with Rewarded Tree",
+        "link": "https://arxiv.org/abs/2510.26020",
+        "arxiv_id": "arXiv:2510.26020"
+      }
+    ]
+  },
+  {
+    "query": "AI agent memory",
+    "predicted": [
+      {
+        "title": "Memory OS of AI Agent",
+        "link": "https://arxiv.org/abs/2506.06326",
+        "arxiv_id": "arXiv:2506.06326"
+      },
+      {
+        "title": "Survey on Evaluation of LLM-based Agents",
+        "link": "https://arxiv.org/abs/2503.16416",
+        "arxiv_id": "arXiv:2503.16416"
+      },
+      {
+        "title": "MIRIX: Multi-Agent Memory System for LLM-Based Agents",
+        "link": "https://arxiv.org/abs/2507.07957",
+        "arxiv_id": "arXiv:2507.07957"
+      },
+      {
+        "title": "Zep: A Temporal Knowledge Graph Architecture for Agent Memory",
+        "link": "https://arxiv.org/abs/2501.13956",
+        "arxiv_id": "arXiv:2501.13956"
+      },
+      {
+        "title": "UI-TARS-2 Technical Report: Advancing GUI Agent with Multi-Turn Reinforcement Learning",
+        "link": "https://arxiv.org/abs/2509.02544",
+        "arxiv_id": "arXiv:2509.02544"
+      },
+      {
+        "title": "MemAgent: Reshaping Long-Context LLM with Multi-Conv RL-based Memory Agent",
+        "link": "https://arxiv.org/abs/2507.02259",
+        "arxiv_id": "arXiv:2507.02259"
+      },
+      {
+        "title": "Group-in-Group Policy Optimization for LLM Agent Training",
+        "link": "https://arxiv.org/abs/2505.10978",
+        "arxiv_id": "arXiv:2505.10978"
+      },
+      {
+        "title": "A‑MEM: Agentic Memory for LLM Agents",
+        "link": "https://arxiv.org/abs/2502.12110",
+        "arxiv_id": "arXiv:2502.12110"
+      },
+      {
+        "title": "A-MemGuard: A Proactive Defense Framework for LLM-Based Agent Memory",
+        "link": "https://arxiv.org/abs/2510.02373",
+        "arxiv_id": "arXiv:2510.02373"
+      },
+      {
+        "title": "LLM-Empowered Embodied Agent for Memory-Augmented Task Planning in Household Robotics",
+        "link": "https://arxiv.org/abs/2504.21716",
+        "arxiv_id": "arXiv:2504.21716"
+      },
+      {
+        "title": "UserCentrix: An Agentic Memory-augmented AI Framework for Smart Spaces",
+        "link": "https://arxiv.org/abs/2505.00472",
+        "arxiv_id": "arXiv:2505.00472"
+      },
+      {
+        "title": "Rethinking Memory in AI: Taxonomy, Operations, Topics, and Future Directions",
+        "link": "https://arxiv.org/abs/2505.00675",
+        "arxiv_id": "arXiv:2505.00675"
+      },
+      {
+        "title": "AI Agents vs. Agentic AI: A Conceptual Taxonomy, Applications and Challenges",
+        "link": "https://arxiv.org/abs/2505.10468",
+        "arxiv_id": "arXiv:2505.10468"
+      },
+      {
+        "title": "WirelessAgent: Large Language Model Agents for Intelligent Wireless Networks",
+        "link": "https://arxiv.org/abs/2505.01074",
+        "arxiv_id": "arXiv:2505.01074"
+      },
+      {
+        "title": "Agent KB: Leveraging Cross-Domain Experience for Agentic Problem Solving",
+        "link": "https://arxiv.org/abs/2507.06229",
+        "arxiv_id": "arXiv:2507.06229"
+      }
+    ]
+  },
+  {
+    "query": "AI agent in finance",
+    "predicted": [
+      {
+        "title": "Deep Reinforcement Learning for Automated Stock Trading: An Ensemble Strategy",
+        "link": "https://arxiv.org/abs/2511.12120",
+        "arxiv_id": "arXiv:2511.12120"
+      },
+      {
+        "title": "Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG",
+        "link": "https://arxiv.org/abs/2501.09136",
+        "arxiv_id": "arXiv:2501.09136"
+      },
+      {
+        "title": "From LLM Reasoning to Autonomous AI Agents: A Comprehensive Review",
+        "link": "https://arxiv.org/abs/2504.19678",
+        "arxiv_id": "arXiv:2504.19678"
+      },
+      {
+        "title": "A Comprehensive Survey of Self-Evolving AI Agents: A New Paradigm Bridging Foundation Models and Lifelong Agentic Systems",
+        "link": "https://arxiv.org/abs/2508.07407",
+        "arxiv_id": "arXiv:2508.07407"
+      },
+      {
+        "title": "From Mind to Machine: The Rise of Manus AI as a Fully Autonomous Digital Agent",
+        "link": "https://arxiv.org/abs/2505.02024",
+        "arxiv_id": "arXiv:2505.02024"
+      },
+      {
+        "title": "A Call for Collaborative Intelligence: Why Human-Agent Systems Should Precede AI Autonomy",
+        "link": "https://arxiv.org/abs/2506.09420",
+        "arxiv_id": "arXiv:2506.09420"
+      },
+      {
+        "title": "From Deep Learning to LLMs: A survey of AI in Quantitative Investment",
+        "link": "https://arxiv.org/abs/2503.21422",
+        "arxiv_id": "arXiv:2503.21422"
+      },
+      {
+        "title": "AlphaQuanter: An End-to-End Tool-Orchestrated Agentic Reinforcement Learning Framework for Stock Trading",
+        "link": "https://arxiv.org/abs/2510.14264",
+        "arxiv_id": "arXiv:2510.14264"
+      },
+      {
+        "title": "TradingGroup: A Multi-Agent Trading System with Self-Reflection and Data-Synthesis",
+        "link": "https://arxiv.org/abs/2508.17565",
+        "arxiv_id": "arXiv:2508.17565"
+      },
+      {
+        "title": "FLAG-Trader: Fusion LLM-Agent with Gradient-based Reinforcement Learning for Financial Trading",
+        "link": "https://arxiv.org/abs/2502.11433",
+        "arxiv_id": "arXiv:2502.11433"
+      },
+      {
+        "title": "FinRL-DeepSeek: LLM-Infused Risk-Sensitive Reinforcement Learning for Trading Agents",
+        "link": "https://arxiv.org/abs/2502.07393",
+        "arxiv_id": "arXiv:2502.07393"
+      },
+      {
+        "title": "FinWorld: An All-in-One Open-Source Platform for End-to-End Financial AI Research and Deployment",
+        "link": "https://arxiv.org/abs/2508.02292",
+        "arxiv_id": "arXiv:2508.02292"
+      },
+      {
+        "title": "Agentic AI Systems Applied to tasks in Financial Services: Modeling and model risk management crews",
+        "link": "https://arxiv.org/abs/2502.05439",
+        "arxiv_id": "arXiv:2502.05439"
+      },
+      {
+        "title": "ABIDES-MARL: A Multi-Agent Reinforcement Learning Environment for Endogenous Price Formation and Execution in a Limit Order Book",
+        "link": "https://arxiv.org/abs/2511.02016",
+        "arxiv_id": "arXiv:2511.02016"
+      },
+      {
+        "title": "AI PB: A Grounded Generative Agent for Personalized Investment Insights",
+        "link": "https://arxiv.org/abs/2510.20099",
+        "arxiv_id": "arXiv:2510.20099"
+      }
+    ]
+  },
+  {
+    "query": "LLM function calling",
+    "predicted": [
+      {
+        "title": "ToolACE: Winning the Points of LLM Function Calling",
+        "link": "https://arxiv.org/abs/2409.00920",
+        "arxiv_id": "arXiv:2409.00920"
+      },
+      {
+        "title": "Logic-RL: Unleashing LLM Reasoning with Rule-Based Reinforcement Learning",
+        "link": "https://arxiv.org/abs/2502.14768",
+        "arxiv_id": "arXiv:2502.14768"
+      },
+      {
+        "title": "Digging Into the Internal: Causality-Based Analysis of LLM Function Calling",
+        "link": "https://arxiv.org/abs/2509.16268",
+        "arxiv_id": "arXiv:2509.16268"
+      },
+      {
+        "title": "ToolHop: A Query-Driven Benchmark for Evaluating Large Language Models in Multi-Hop Tool Use",
+        "link": "https://arxiv.org/abs/2501.02506",
+        "arxiv_id": "arXiv:2501.02506"
+      },
+      {
+        "title": "Tool Learning in the Wild: Empowering Language Models as Automatic Tool Agents",
+        "link": "https://arxiv.org/abs/2405.16533",
+        "arxiv_id": "arXiv:2405.16533"
+      },
+      {
+        "title": "Critique-GRPO: Advancing LLM Reasoning with Natural Language and Numerical Feedback",
+        "link": "https://arxiv.org/abs/2506.03106",
+        "arxiv_id": "arXiv:2506.03106"
+      },
+      {
+        "title": "From Prompt Injections to Protocol Exploits: Threats in LLM-Powered AI Agents Workflows",
+        "link": "https://arxiv.org/abs/2506.23260",
+        "arxiv_id": "arXiv:2506.23260"
+      },
+      {
+        "title": "BigCodeBench: Benchmarking Code Generation with Diverse Function Calls and Complex Instructions",
+        "link": "https://arxiv.org/abs/2406.15877",
+        "arxiv_id": "arXiv:2406.15877"
+      },
+      {
+        "title": "PLeak: Prompt Leaking Attacks against Large Language Model Applications",
+        "link": "https://arxiv.org/abs/2405.06823",
+        "arxiv_id": "arXiv:2405.06823"
+      },
+      {
+        "title": "Improving Large Language Models Function Calling and Interpretability via Guided-Structured Templates",
+        "link": "https://arxiv.org/abs/2509.18076",
+        "arxiv_id": "arXiv:2509.18076"
+      },
+      {
+        "title": "LongFuncEval: Measuring the effectiveness of long context models for function calling",
+        "link": "https://arxiv.org/abs/2505.10570",
+        "arxiv_id": "arXiv:2505.10570"
+      },
+      {
+        "title": "OmniStruct: Universal Text-to-Structure Generation across Diverse Schemas",
+        "link": "https://arxiv.org/abs/2511.18335",
+        "arxiv_id": "arXiv:2511.18335"
+      },
+      {
+        "title": "Taxonomy, Evaluation and Exploitation of IPI-Centric LLM Agent Defense Frameworks",
+        "link": "https://arxiv.org/abs/2511.15203",
+        "arxiv_id": "arXiv:2511.15203"
+      },
+      {
+        "title": "Alignment for Efficient Tool Calling of Large Language Models",
+        "link": "https://arxiv.org/abs/2503.06708",
+        "arxiv_id": "arXiv:2503.06708"
+      },
+      {
+        "title": "Learning to Ask: When LLM Agents Meet Unclear Instruction",
+        "link": "https://arxiv.org/abs/2409.00557",
+        "arxiv_id": "arXiv:2409.00557"
+      }
+    ]
+  },
+  {
+    "query": "LLM decision making",
+    "predicted": [
+      {
+        "title": "Beyond Distillation: Pushing the Limits of Medical LLM Reasoning with Minimalist Rule-Based RL",
+        "link": "https://arxiv.org/abs/2505.17952",
+        "arxiv_id": "arXiv:2505.17952"
+      },
+      {
+        "title": "RAGEN: Understanding Self-Evolution in LLM Agents via Multi-Turn Reinforcement Learning",
+        "link": "https://arxiv.org/abs/2504.20073",
+        "arxiv_id": "arXiv:2504.20073"
+      },
+      {
+        "title": "AgentGym-RL: Training LLM Agents for Long-Horizon Decision Making through Multi-Turn Reinforcement Learning",
+        "link": "https://arxiv.org/abs/2509.08755",
+        "arxiv_id": "arXiv:2509.08755"
+      },
+      {
+        "title": "LLMs are Greedy Agents: Effects of RL Fine-tuning on Decision-Making Abilities",
+        "link": "https://arxiv.org/abs/2504.16078",
+        "arxiv_id": "arXiv:2504.16078"
+      },
+      {
+        "title": "J1: Incentivizing Thinking in LLM-as-a-Judge via Reinforcement Learning",
+        "link": "https://arxiv.org/abs/2505.10320",
+        "arxiv_id": "arXiv:2505.10320"
+      },
+      {
+        "title": "TRiSM for Agentic AI: A Review of Trust, Risk, and Security Management in LLM-based Agentic Multi-Agent Systems",
+        "link": "https://arxiv.org/abs/2506.04133",
+        "arxiv_id": "arXiv:2506.04133"
+      },
+      {
+        "title": "The Landscape of Agentic Reinforcement Learning for LLMs: A Survey",
+        "link": "https://arxiv.org/abs/2509.02547",
+        "arxiv_id": "arXiv:2509.02547"
+      },
+      {
+        "title": "Causal-aware Large Language Models: Enhancing Decision-Making Through Learning, Adapting and Acting",
+        "link": "https://arxiv.org/abs/2505.24710",
+        "arxiv_id": "arXiv:2505.24710"
+      },
+      {
+        "title": "LLM-Guided Probabilistic Program Induction for POMDP Model Estimation",
+        "link": "https://arxiv.org/abs/2505.02216",
+        "arxiv_id": "arXiv:2505.02216"
+      },
+      {
+        "title": "Post-Training LLMs as Better Decision-Making Agents: A Regret-Minimization Approach",
+        "link": "https://arxiv.org/abs/2511.04393",
+        "arxiv_id": "arXiv:2511.04393"
+      },
+      {
+        "title": "Large Language Models for Planning: A Comprehensive and Systematic Survey",
+        "link": "https://arxiv.org/abs/2505.19683",
+        "arxiv_id": "arXiv:2505.19683"
+      },
+      {
+        "title": "Think Twice, Act Once: A Co-Evolution Framework of LLM and RL for Large-Scale Decision Making",
+        "link": "https://arxiv.org/abs/2506.02522",
+        "arxiv_id": "arXiv:2506.02522"
+      },
+      {
+        "title": "RL in Name Only? Analyzing the Structural Assumptions in RL post-training for LLMs",
+        "link": "https://arxiv.org/abs/2505.13697",
+        "arxiv_id": "arXiv:2505.13697"
+      },
+      {
+        "title": "Enhancing Decision-Making of Large Language Models via Actor-Critic",
+        "link": "https://arxiv.org/abs/2506.06376",
+        "arxiv_id": "arXiv:2506.06376"
+      },
+      {
+        "title": "Divide and Conquer: Grounding LLMs as Efficient Decision-Making Agents via Offline Hierarchical Reinforcement Learning",
+        "link": "https://arxiv.org/abs/2505.19761",
+        "arxiv_id": "arXiv:2505.19761"
+      }
+    ]
+  }
+]
