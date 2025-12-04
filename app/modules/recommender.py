@@ -7,9 +7,10 @@ from app.modules.authors_info import get_authors_meta
 from app.modules.scoring import sort_articles
 from app.logs.logger import logger
 
-TOP_N_DEFAULT = 10
-TOP_RESULT = 5
-MODEL_NAME = "all-MiniLM-L6-v2"
+TOP_N_DEFAULT = 150
+TOP_RESULT = 15
+BATCH_SIZE = 32
+MODEL_NAME = "all-MiniLM-L6-v2" # or "model_testing/tuned_model"
 RESULTS_DIR = "app/results"
 
 
@@ -28,7 +29,7 @@ def compute_similarity(
     """
     logger.info("Вычисление эмбеддингов и косинусного сходства")
     query_emb = model.encode(query, convert_to_tensor=True)
-    doc_embs = model.encode(texts, convert_to_tensor=True, batch_size=32)
+    doc_embs = model.encode(texts, convert_to_tensor=True, batch_size=BATCH_SIZE)
     scores = util.cos_sim(query_emb, doc_embs)[0]
     logger.info("Вычисления сходства завершены")
     return scores
