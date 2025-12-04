@@ -10,7 +10,7 @@ from app.logs.logger import logger
 TOP_N_DEFAULT = 150
 TOP_RESULT = 15
 BATCH_SIZE = 32
-MODEL_NAME = "all-MiniLM-L6-v2" # or "model_testing/tuned_model"
+MODEL_NAME = "model_testing/tuned_model"
 RESULTS_DIR = "app/results"
 
 
