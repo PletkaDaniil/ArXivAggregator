@@ -7,52 +7,55 @@ tags:
 - generated_from_trainer
 - dataset_size:1428
 - loss:CosineSimilarityLoss
-base_model: sentence-transformers/all-MiniLM-L6-v2
+base_model: sentence-transformers/paraphrase-MiniLM-L6-v2
 widget:
-- source_sentence: quantization-aware training for LLMs
+- source_sentence: federated learning for privacy-preserving AI
   sentences:
-  - Multi-Agent Reinforcement Learning for Deadlock Handling among Autonomous Mobile
-    Robots
-  - 'PTQTP: Post-Training Quantization to Trit-Planes for Large Language Models'
-  - Now You See It, Now You Don't - Instant Concept Erasure for Safe Text-to-Image
-    and Video Generation
-- source_sentence: RLHF training methods for alignment
+  - Contrastive Learning Enhances Language Model Based Cell Embeddings for Low-Sample
+    Single Cell Transcriptomics
+  - 'MedFedPure: A Medical Federated Framework with MAE-based Detection and Diffusion
+    Purification for Inference-Time Attacks'
+  - 'Legal Mathematical Reasoning with LLMs: Procedural Alignment through Two-Stage
+    Reinforcement Learning'
+- source_sentence: reducing hallucinations via RAG training
   sentences:
-  - 'Generative AI and Large Language Models in Language Preservation: Opportunities
-    and Challenges'
-  - Balancing Accuracy, Calibration, and Efficiency in Active Learning with Vision
-    Transformers Under Label Noise
-  - 'ENCORE: Entropy-guided Reward Composition for Multi-head Safety Reward Models'
-- source_sentence: multi-agent LLM collaboration frameworks
+  - Enhancing Uncertainty Quantification for Runtime Safety Assurance Using Causal
+    Risk Analysis and Operational Design Domain
+  - LLM-Guided Synthetic Augmentation (LGSA) for Mitigating Bias in AI Systems
+  - 'PL-CA: A Parametric Legal Case Augmentation Framework'
+- source_sentence: efficient decoding strategies for large models
   sentences:
-  - '10Cache: Heterogeneous Resource-Aware Tensor Caching and Migration for LLM Training'
-  - Vector Symbolic Algebras for the Abstraction and Reasoning Corpus
-  - 'OEMA: Ontology-Enhanced Multi-Agent Collaboration Framework for Zero-Shot Clinical
-    Named Entity Recognition'
-- source_sentence: training trillion-token-scale datasets
+  - 'Towards Generalizable Human Activity Recognition: A Survey'
+  - 'd-Sketch: Improving Visual Fidelity of Sketch-to-Image Translation with Pretrained
+    Latent Diffusion Models without Retraining'
+  - 'MindCross: Fast New Subject Adaptation with Limited Data for Cross-subject Video
+    Reconstruction from Brain Signals'
+- source_sentence: handling catastrophic forgetting in LLM fine-tuning
   sentences:
-  - Gradient Free Deep Reinforcement Learning With TabPFN
-  - 'FindingDory: A Benchmark to Evaluate Memory in Embodied Agents'
-  - 'FED: Fast and Efficient Dataset Deduplication Framework with GPU Acceleration'
-- source_sentence: architectural innovations in transformer models
+  - 'Robust Defense Strategies for Multimodal Contrastive Learning: Efficient Fine-tuning
+    Against Backdoor Attacks'
+  - 'Episodic Memory in Agentic Frameworks: Suggesting Next Tasks'
+  - 'Learning Wisdom from Errors: Promoting LLM''s Continual Relation Learning through
+    Exploiting Error Cases'
+- source_sentence: deep learning for image recognition
   sentences:
-  - Audio Driven Real-Time Facial Animation for Social Telepresence
-  - Leveraging Adversarial Learning for Pathological Fidelity in Virtual Staining
-  - 'MuCPT: Music-related Natural Language Model Continued Pretraining'
+  - Saliency-Guided Deep Learning for Bridge Defect Detection in Drone Imagery
+  - 'TubeBEND: A Real-World Dataset for Geometry Prediction in Rotary Draw Bending'
+  - 'DINO-MX: A Modular & Flexible Framework for Self-Supervised Learning'
 pipeline_tag: sentence-similarity
 library_name: sentence-transformers
 ---
 
-# SentenceTransformer based on sentence-transformers/all-MiniLM-L6-v2
+# SentenceTransformer based on sentence-transformers/paraphrase-MiniLM-L6-v2
 
-This is a [sentence-transformers](https://www.SBERT.net) model finetuned from [sentence-transformers/all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2). It maps sentences & paragraphs to a 384-dimensional dense vector space and can be used for semantic textual similarity, semantic search, paraphrase mining, text classification, clustering, and more.
+This is a [sentence-transformers](https://www.SBERT.net) model finetuned from [sentence-transformers/paraphrase-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/paraphrase-MiniLM-L6-v2). It maps sentences & paragraphs to a 384-dimensional dense vector space and can be used for semantic textual similarity, semantic search, paraphrase mining, text classification, clustering, and more.
 
 ## Model Details
 
 ### Model Description
 - **Model Type:** Sentence Transformer
-- **Base model:** [sentence-transformers/all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) <!-- at revision c9745ed1d9f207416be6d2e6f8de32d1f16199bf -->
-- **Maximum Sequence Length:** 256 tokens
+- **Base model:** [sentence-transformers/paraphrase-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/paraphrase-MiniLM-L6-v2) <!-- at revision c9a2bfebc254878aee8c3aca9e6844d5bbb102d1 -->
+- **Maximum Sequence Length:** 128 tokens
 - **Output Dimensionality:** 384 dimensions
 - **Similarity Function:** Cosine Similarity
 <!-- - **Training Dataset:** Unknown -->
@@ -69,9 +72,8 @@ This is a [sentence-transformers](https://www.SBERT.net) model finetuned from [s
 
 ```
 SentenceTransformer(
-  (0): Transformer({'max_seq_length': 256, 'do_lower_case': False, 'architecture': 'BertModel'})
+  (0): Transformer({'max_seq_length': 128, 'do_lower_case': False, 'architecture': 'BertModel'})
   (1): Pooling({'word_embedding_dimension': 384, 'pooling_mode_cls_token': False, 'pooling_mode_mean_tokens': True, 'pooling_mode_max_tokens': False, 'pooling_mode_mean_sqrt_len_tokens': False, 'pooling_mode_weightedmean_tokens': False, 'pooling_mode_lasttoken': False, 'include_prompt': True})
-  (2): Normalize()
 )
 ```
 
@@ -93,9 +95,9 @@ from sentence_transformers import SentenceTransformer
 model = SentenceTransformer("sentence_transformers_model_id")
 # Run inference
 sentences = [
-    'architectural innovations in transformer models',
-    'Audio Driven Real-Time Facial Animation for Social Telepresence',
-    'Leveraging Adversarial Learning for Pathological Fidelity in Virtual Staining',
+    'deep learning for image recognition',
+    'Saliency-Guided Deep Learning for Bridge Defect Detection in Drone Imagery',
+    'TubeBEND: A Real-World Dataset for Geometry Prediction in Rotary Draw Bending',
 ]
 embeddings = model.encode(sentences)
 print(embeddings.shape)
@@ -104,9 +106,9 @@ print(embeddings.shape)
 # Get the similarity scores for the embeddings
 similarities = model.similarity(embeddings, embeddings)
 print(similarities)
-# tensor([[1.0000, 0.9943, 0.9960],
-#         [0.9943, 1.0000, 0.9964],
-#         [0.9960, 0.9964, 1.0000]])
+# tensor([[1.0000, 0.9979, 0.9966],
+#         [0.9979, 1.0000, 0.9985],
+#         [0.9966, 0.9985, 1.0000]])
 ```
 
 <!--
@@ -154,16 +156,16 @@ You can finetune this model on your own dataset.
 * Size: 1,428 training samples
 * Columns: <code>sentence_0</code>, <code>sentence_1</code>, and <code>label</code>
 * Approximate statistics based on the first 1000 samples:
-  |         | sentence_0                                                                       | sentence_1                                                                        | label                                                         |
-  |:--------|:---------------------------------------------------------------------------------|:----------------------------------------------------------------------------------|:--------------------------------------------------------------|
-  | type    | string                                                                           | string                                                                            | float                                                         |
-  | details | <ul><li>min: 6 tokens</li><li>mean: 8.94 tokens</li><li>max: 16 tokens</li></ul> | <ul><li>min: 5 tokens</li><li>mean: 18.88 tokens</li><li>max: 46 tokens</li></ul> | <ul><li>min: 1.0</li><li>mean: 1.0</li><li>max: 1.0</li></ul> |
+  |         | sentence_0                                                                      | sentence_1                                                                       | label                                                         |
+  |:--------|:--------------------------------------------------------------------------------|:---------------------------------------------------------------------------------|:--------------------------------------------------------------|
+  | type    | string                                                                          | string                                                                           | float                                                         |
+  | details | <ul><li>min: 6 tokens</li><li>mean: 8.9 tokens</li><li>max: 16 tokens</li></ul> | <ul><li>min: 5 tokens</li><li>mean: 18.8 tokens</li><li>max: 46 tokens</li></ul> | <ul><li>min: 1.0</li><li>mean: 1.0</li><li>max: 1.0</li></ul> |
 * Samples:
-  | sentence_0                                         | sentence_1                                                                  | label            |
-  |:---------------------------------------------------|:----------------------------------------------------------------------------|:-----------------|
-  | <code>LLM agents for scientific computation</code> | <code>Mathematical exploration and discovery at scale</code>                | <code>1.0</code> |
-  | <code>transformer models beyond NLP</code>         | <code>Personality Prediction from Life Stories using Language Models</code> | <code>1.0</code> |
-  | <code>ML for agriculture yield prediction</code>   | <code>SAGDA: Open-Source Synthetic Agriculture Data for Africa</code>       | <code>1.0</code> |
+  | sentence_0                                                   | sentence_1                                                                                                                       | label            |
+  |:-------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------|:-----------------|
+  | <code>architectural innovations in transformer models</code> | <code>Personality-guided Public-Private Domain Disentangled Hypergraph-Former Network for Multimodal Depression Detection</code> | <code>1.0</code> |
+  | <code>explainable machine learning methods</code>            | <code>Privacy-Preserving Explainable AIoT Application via SHAP Entropy Regularization</code>                                     | <code>1.0</code> |
+  | <code>AI-based simulation of physical systems</code>         | <code>World Simulation with Video Foundation Models for Physical AI</code>                                                       | <code>1.0</code> |
 * Loss: [<code>CosineSimilarityLoss</code>](https://sbert.net/docs/package_reference/sentence_transformer/losses.html#cosinesimilarityloss) with these parameters:
   ```json
   {
@@ -306,13 +308,13 @@ You can finetune this model on your own dataset.
 ### Training Logs
 | Epoch  | Step | Training Loss |
 |:------:|:----:|:-------------:|
-| 0.3501 | 500  | 0.3904        |
-| 0.7003 | 1000 | 0.0853        |
-| 1.0504 | 1500 | 0.0026        |
-| 1.4006 | 2000 | 0.0009        |
+| 0.3501 | 500  | 0.2919        |
+| 0.7003 | 1000 | 0.0226        |
+| 1.0504 | 1500 | 0.0015        |
+| 1.4006 | 2000 | 0.0006        |
 | 1.7507 | 2500 | 0.0003        |
-| 2.1008 | 3000 | 0.0003        |
-| 2.4510 | 3500 | 0.0002        |
+| 2.1008 | 3000 | 0.0002        |
+| 2.4510 | 3500 | 0.0001        |
 | 2.8011 | 4000 | 0.0001        |
 
 
@@ -322,7 +324,7 @@ You can finetune this model on your own dataset.
 - Transformers: 4.57.3
 - PyTorch: 2.7.1+cpu
 - Accelerate: 1.12.0
-- Datasets: 2.21.0
+- Datasets: 4.4.1
 - Tokenizers: 0.22.1
 
 ## Citation
