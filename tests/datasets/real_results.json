@@ -2,41 +2,41 @@
   {
     "query": "LLM use tools",
     "results": [
-      "The Landscape of Agentic Reinforcement Learning for LLMs: A Survey",
-      "VerlTool: Towards Holistic Agentic Reinforcement Learning with Tool Use",
-      "SWE-Dev: Building Software Engineering Agents with Training and Inference Scaling",
-      "Agentic Additive Manufacturing Alloy Discovery",
-      "Automating MD simulations for Proteins using Large language Models: NAMD-Agent",
       "MCP-Bench: Benchmarking Tool-Using LLM Agents with Complex Real-World Tasks via MCP Servers",
-      "RefAgent: A Multi-agent LLM-based Framework for Automatic Software Refactoring",
-      "Guided Reasoning in LLM-Driven Penetration Testing Using Structured Attack Trees",
-      "DCE-LLM: Dead Code Elimination with Large Language Models",
-      "Procedural Environment Generation for Tool-Use Agents",
-      "Combating the Memory Walls: Optimization Pathways for Long-Context Agentic LLM Inference",
-      "ToolScope: Enhancing LLM Agent Tool Use through Tool Merging and Context-Aware Filtering",
-      "Enhancing LLM Tool Use with High-quality Instruction Data from Knowledge Graph",
-      "LLM-I: LLMs are Naturally Interleaved Multimodal Creators",
-      "ToolGrad: Efficient Tool-use Dataset Generation with Textual \"Gradients\""
+      "LiveMCP-101: Stress Testing and Diagnosing MCP-enabled Agents on Challenging Queries",
+      "Comprehensive Verilog Design Problems: A Next-Generation Benchmark Dataset for Evaluating Large Language Models and Agents on RTL Design and Verification",
+      "MCPToolBench++: A Large Scale AI Agent Model Context Protocol MCP Tool Use Benchmark",
+      "From Language to Action: A Review of Large Language Models as Autonomous Agents and Tool Users",
+      "Agentic Additive Manufacturing Alloy Discovery",
+      "Narrowing the Gap: Supervised Fine-Tuning of Open-Source LLMs as a Viable Alternative to Proprietary Models for Pedagogical Tools",
+      "TURA: Tool-Augmented Unified Retrieval Agent for AI Search",
+      "Utilizing Large Language Models for Machine Learning Explainability",
+      "Reinforcement Learning Meets Large Language Models: A Survey of Advancements and Applications Across the LLM Lifecycle",
+      "Generalizable End-to-End Tool-Use RL with Synthetic CodeGym",
+      "GPT-4.1 Sets the Standard in Automated Experiment Design Using Novel Python Libraries",
+      "ACON: Optimizing Context Compression for Long-horizon LLM Agents",
+      "Language Models Change Facts Based on the Way You Talk",
+      "Are AI-Generated Fixes Secure? Analyzing LLM and Agent Patches on SWE-bench"
     ]
   },
   {
     "query": "AI agent memory",
     "results": [
       "AI Agents vs. Agentic AI: A Conceptual Taxonomy, Applications and Challenges",
-      "From Large AI Models to Agentic AI: A Tutorial on Future Intelligent Communications",
+      "MapNav: A Novel Memory Representation via Annotated Semantic Maps for Vision-and-Language Navigation",
       "Survey on Evaluation of LLM-based Agents",
       "A Tutorial on Cognitive Biases in Agentic AI-Driven 6G Autonomous Networks",
-      "Advances and Challenges in Foundation Agents: From Brain-Inspired Intelligence to Evolutionary, Collaborative, and Safe Systems",
-      "The Landscape of Agentic Reinforcement Learning for LLMs: A Survey",
+      "Real AI Agents with Fake Memories: Fatal Context Manipulation Attacks on Web3 Agents",
       "UserCentrix: An Agentic Memory-augmented AI Framework for Smart Spaces",
+      "SPA-Bench: A Comprehensive Benchmark for SmartPhone Agent Evaluation",
       "Rethinking Memory in AI: Taxonomy, Operations, Topics, and Future Directions",
-      "WirelessAgent: Large Language Model Agents for Intelligent Wireless Networks",
+      "AISAC: An Integrated multi-agent System for Transparent, Retrieval-Grounded Scientific Assistance",
       "MIRIX: Multi-Agent Memory System for LLM-Based Agents",
       "Zep: A Temporal Knowledge Graph Architecture for Agent Memory",
       "Agent KB: Leveraging Cross-Domain Experience for Agentic Problem Solving",
-      "Embodied AI Agents: Modeling the World",
       "Towards Agentic Recommender Systems in the Era of Multimodal Large Language Models",
-      "Memory OS of AI Agent"
+      "MARCO: Hardware-Aware Neural Architecture Search for Edge Devices with Multi-Agent Reinforcement Learning and Conformal Prediction Filtering",
+      "Forewarned is Forearmed: A Survey on Large Language Model-based Agents in Autonomous Cyberattacks"
     ]
   },
   {
@@ -47,15 +47,15 @@
       "Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG",
       "FinSight: Towards Real-World Financial Deep Research",
       "ABIDES-MARL: A Multi-Agent Reinforcement Learning Environment for Endogenous Price Formation and Execution in a Limit Order Book",
-      "AutoData: A Multi-Agent System for Open Web Data Collection",
-      "Standard Benchmarks Fail -- Auditing LLM Agents in Finance Must Prioritize Risk",
-      "ElliottAgents: A Natural Language-Driven Multi-Agent System for Stock Market Analysis and Prediction",
+      "A Comprehensive Survey of Self-Evolving AI Agents: A New Paradigm Bridging Foundation Models and Lifelong Agentic Systems",
       "From Mind to Machine: The Rise of Manus AI as a Fully Autonomous Digital Agent",
       "HAICOSYSTEM: An Ecosystem for Sandboxing Safety Risks in Human-AI Interactions",
       "FinRobot: Generative Business Process AI Agents for Enterprise Resource Planning in Finance",
       "A Call for Collaborative Intelligence: Why Human-Agent Systems Should Precede AI Autonomy",
-      "Agentic AI Systems Applied to Tasks in Financial Services: Modeling and Model Risk Management Crews",
-      "The Measurement Imbalance in Agentic AI Evaluation Undermines Industry Productivity Claims",
+      "Web3 x AI Agents: Landscape, Integrations, and Foundational Challenges",
+      "ElliottAgents: A Natural Language-Driven Multi-Agent System for Stock Market Analysis and Prediction",
+      "Agentic AI Systems Applied to tasks in Financial Services: Modeling and model risk management crews",
+      "AutoData: A Multi-Agent System for Open Web Data Collection",
       "FinWorld: An All-in-One Open-Source Platform for End-to-End Financial AI Research and Deployment"
     ]
   },
@@ -63,41 +63,40 @@
     "query": "LLM function calling",
     "results": [
       "BigCodeBench: Benchmarking Code Generation with Diverse Function Calls and Complex Instructions",
-      "From Prompt Injections to Protocol Exploits: Threats in LLM-Powered AI Agents Workflows",
+      "Bridging the Safety Gap: A Guardrail Pipeline for Trustworthy LLM Inferences",
       "ToolACE: Winning the Points of LLM Function Calling",
-      "LAPRAD: LLM-Assisted PRotocol Attack Discovery",
-      "PLeak: Prompt Leaking Attacks against Large Language Model Applications",
-      "Tool Learning in the Wild: Empowering Language Models as Automatic Tool Agents",
+      "Nemotron-Research-Tool-N1: Exploring Tool-Using Language Models with Reinforced Reasoning",
+      "Bootstrapping Object-level Planning with Large Language Models",
       "NYU CTF Bench: A Scalable Open-Source Benchmark Dataset for Evaluating LLMs in Offensive Security",
-      "Small Models, Big Tasks: An Exploratory Empirical Study on Small Language Models for Function Calling",
       "ExeCoder: Empowering Large Language Models with Executability Representation for Code Translation",
       "Contrastive Policy Gradient: Aligning LLMs on sequence-level scores in a supervised-friendly fashion",
-      "Large Language Model Enhanced Particle Swarm Optimization for Hyperparameter Tuning for Deep Learning Models",
-      "ToolHop: A Query-Driven Benchmark for Evaluating Large Language Models in Multi-Hop Tool Use",
+      "PLeak: Prompt Leaking Attacks against Large Language Model Applications",
+      "Small Models, Big Tasks: An Exploratory Empirical Study on Small Language Models for Function Calling",
+      "MIMII-Agent: Leveraging LLMs with Function Calling for Relative Evaluation of Anomalous Sound Detection",
       "Learning to Ask: When LLM Agents Meet Unclear Instruction",
-      "Ask, and it shall be given: On the Turing completeness of prompting",
-      "Digging Into the Internal: Causality-Based Analysis of LLM Function Calling"
+      "Adaptive Tool Use in Large Language Models with Meta-Cognition Trigger",
+      "VisionThink: Smart and Efficient Vision Language Model via Reinforcement Learning",
+      "ComplexFuncBench: Exploring Multi-Step and Constrained Function Calling under Long-Context Scenario"
     ]
   },
   {
-  "query": "LLM decision making",
-  "results": [
-    "The Landscape of Agentic Reinforcement Learning for LLMs: A Survey",
-    "J1: Incentivizing Thinking in LLM-as-a-Judge via Reinforcement Learning",
-    "Improving LLM Agent Planning with In-Context Learning via Atomic Fact Augmentation and Lookahead Search",
-    "Reward Is Enough: LLMs Are In-Context Reinforcement Learners",
-    "Beyond Distillation: Pushing the Limits of Medical LLM Reasoning with Minimalist Rule-Based RL",
-    "AgentGym-RL: Training LLM Agents for Long-Horizon Decision Making through Multi-Turn Reinforcement Learning",
-    "Integrating Large Language Models in Financial Investments and Market Analysis: A Survey",
-    "LLM-Guided Probabilistic Program Induction for POMDP Model Estimation",
-    "Post-Training LLMs as Better Decision-Making Agents: A Regret-Minimization Approach",
-    "Large Language Models for Planning: A Comprehensive and Systematic Survey",
-    "Think Twice, Act Once: A Co-Evolution Framework of LLM and RL for Large-Scale Decision Making",
-    "DecisionFlow: Advancing Large Language Model as Principled Decision Maker",
-    "RL in Name Only? Analyzing the Structural Assumptions in RL post-training for LLMs",
-    "When Ethics and Payoffs Diverge: LLM Agents in Morally Charged Social Dilemmas",
-    "HALF: Harm-Aware LLM Fairness Evaluation Aligned with Deployment"
-  ]
-}
-
+    "query": "LLM decision making",
+    "results": [
+      "Baichuan-M2: Scaling Medical Capability with Large Verifier System",
+      "Large Language Models for Planning: A Comprehensive and Systematic Survey",
+      "Robustly Improving LLM Fairness in Realistic Settings via Interpretability",
+      "Cascaded Language Models for Cost-effective Human-AI Decision-Making",
+      "Integrating Large Language Models in Financial Investments and Market Analysis: A Survey",
+      "MedGUIDE: Benchmarking Clinical Decision-Making in Large Language Models",
+      "Beyond Nash Equilibrium: Bounded Rationality of LLMs and humans in Strategic Decision-making",
+      "ORMind: A Cognitive-Inspired End-to-End Reasoning Framework for Operations Research",
+      "Automating Expert-Level Medical Reasoning Evaluation of Large Language Models",
+      "Improving Metacognition and Uncertainty Communication in Language Models",
+      "Subtle Risks, Critical Failures: A Framework for Diagnosing Physical Safety of LLMs for Embodied Decision Making",
+      "LLMs in the SOC: An Empirical Study of Human-AI Collaboration in Security Operations Centres",
+      "FutureX: An Advanced Live Benchmark for LLM Agents in Future Prediction",
+      "SATA-BENCH: Select All That Apply Benchmark for Multiple Choice Questions",
+      "ER-REASON: A Benchmark Dataset for LLM-Based Clinical Reasoning in the Emergency Room"
+    ]
+  }
 ]
