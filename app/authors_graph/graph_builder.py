@@ -6,6 +6,25 @@ from app.logs.graph_logger import logger
 
 GRAPH_FILE = "app/results/graph.gexf"
 JSON_FILE = "app/results/results.json"
+PROCESSED = "app/results/processed_papers.json"
+
+
+def load_processed_ids() -> set:
+    """
+        Загружаем все обработанные paperId
+    """
+    if os.path.exists(PROCESSED):
+        with open(PROCESSED, "r", encoding="utf-8") as f:
+            return set(json.load(f))
+    return set()
+
+
+def save_processed_ids(ids: set):
+    """
+        Сохраняем все обработанные paperId
+    """
+    with open(PROCESSED, "w", encoding="utf-8") as f:
+        json.dump(list(ids), f, ensure_ascii=False, indent=2)
 
 
 def build_graph(topics: list) -> nx.Graph:
@@ -23,7 +42,10 @@ def build_graph(topics: list) -> nx.Graph:
         logger.info(f"Сохраняем новый стартовый граф в файл {GRAPH_FILE}")
         nx.write_gexf(G, GRAPH_FILE)
 
-    # добавляем новых авторов
+    # загружаем множество обработанных статей
+    processed = load_processed_ids()
+
+    # добавляем только новые статьи и авторов
     if os.path.exists(JSON_FILE):
         logger.info(f"Добавляем статьи из файла {JSON_FILE}")
 
@@ -31,9 +53,16 @@ def build_graph(topics: list) -> nx.Graph:
             papers = json.load(f)
 
         for paper in papers:
+            paper_id = paper.get("info", {}).get("paper_id")
+            if not paper_id or paper_id in processed:
+                continue
+
             authors = paper.get("info", {}).get("authors", [])
             if authors:
                 add_coauthor_edges(G, authors)
+            processed.add(paper_id)
+
+        save_processed_ids(processed)
 
         logger.info(
             f"После добавления статей: число вершин={G.number_of_nodes()}, число рёбер={G.number_of_edges()}"
@@ -45,7 +74,6 @@ def build_graph(topics: list) -> nx.Graph:
     logger.info(f"Граф успешно сохранён в {GRAPH_FILE}")
 
     return G
-
 
 
 def add_coauthor_edges(G: nx.Graph, authors: list):
@@ -79,4 +107,3 @@ def add_coauthor_edges(G: nx.Graph, authors: list):
                 G[u][v]['weight'] += edge_weight
             else:
                 G.add_edge(u, v, weight=edge_weight)
-

@@ -1,3 +1,5 @@
+import os
+import json
 import requests
 import networkx as nx
 import time
@@ -6,6 +8,25 @@ from app.logs.graph_logger import logger
 API_URL = "https://api.semanticscholar.org/graph/v1/paper/search"
 LIMIT = 20
 DELAY = 3
+PROCESSED = "app/results/processed_papers.json"
+
+
+def load_processed_ids() -> set:
+    """
+        Загружаем все обработанные paperId
+    """
+    if os.path.exists(PROCESSED):
+        with open(PROCESSED, "r", encoding="utf-8") as f:
+            return set(json.load(f))
+    return set()
+
+
+def save_processed_ids(ids: set):
+    """
+        Сохраняем все обработанные paperId
+    """
+    with open(PROCESSED, "w", encoding="utf-8") as f:
+        json.dump(list(ids), f, ensure_ascii=False, indent=2)
 
 
 def fetch_papers_for_topic(topic: str) -> list:
@@ -24,7 +45,7 @@ def fetch_papers_for_topic(topic: str) -> list:
     while attempts < 5:
         try:
             response = requests.get(
-                API_URL, 
+                API_URL,
                 params=parameters,
                 timeout=30
             )
@@ -44,27 +65,31 @@ def fetch_papers_for_topic(topic: str) -> list:
                 delay *= 2
                 attempts += 1
                 continue
-            
+
             logger.error(f"Ошибка API ({response.status_code}): {response.text}")
-            return None
-        
+            return []
+
         except requests.RequestException as e:
             logger.error(f"Ошибка соединения при запросе тематики '{topic}': {e}")
             time.sleep(delay)
             delay *= 2
-            attempts += 1 
-        attempts += 1 
+            attempts += 1
+        attempts += 1
 
     logger.error(f"Превышено число попыток для темы '{topic}'")
     return []
 
 
-def add_paper_to_graph(G: nx.Graph, paper: dict):
+def add_paper_to_graph(G: nx.Graph, paper: dict, processed: set):
     """
         Добавляем всех авторов статьи в граф + рёбра между ними
+        Пропускаем статью, если она уже была обработана
     """
-    title = paper.get("title")
     paper_id = paper.get("paperId")
+    if not paper_id or paper_id in processed:
+        return
+
+    title = paper.get("title")
     authors = paper.get("authors", [])
     logger.info(f"Добавление статьи '{title}', id: {paper_id}, авторов={len(authors)}")
     author_nodes = []
@@ -94,21 +119,26 @@ def add_paper_to_graph(G: nx.Graph, paper: dict):
             else:
                 G.add_edge(u, v, weight=3)
 
+    processed.add(paper_id)
 
 def build_author_seed_graph(topics: list) -> nx.Graph:
     """
-        Строим граф авторов, исспользуя популярные статьи (по заданным темам)
+        Строим граф авторов, используя популярные статьи (по заданным темам)
     """
     logger.info("Начинаем построение стартового графа авторов...")
 
     G = nx.Graph()
+    processed = load_processed_ids()
 
     for topic in topics:
         papers = fetch_papers_for_topic(topic)
         logger.info(f"Обработка {len(papers)} статей по теме '{topic}'")
 
         for paper in papers:
-            add_paper_to_graph(G, paper)
+            add_paper_to_graph(G, paper, processed)
+
+    # сохраняем обновлённый список обработанных ID
+    save_processed_ids(processed)
 
     logger.info(
         f"Стартовый граф создан: число вершин={G.number_of_nodes()}, число рёбер={G.number_of_edges()}"
